@@ -1,0 +1,484 @@
+[
+  {
+    "id": "1",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "card-double-deluxe",
+    "price": 100,
+    "size": 200,
+    "capacity": 1,
+    "pets": false,
+    "breakfast": true,
+    "familyFriendly": false,
+    "wifi": true,
+    "meals": true,
+    "tv": true,
+    "description": "Comfortable double room with additional amenities for a relaxed stay",
+    "location": {
+      "city": "Marbella",
+      "country": "Spain"
+    },
+
+    "images": ["images/double-delux.png"]
+  },
+  {
+    "id": "2",
+    "name": "Family Deluxe",
+    "type": "family",
+    "slug": "card-family-deluxe",
+    "price": 150,
+    "size": 250,
+    "capacity": 2,
+    "pets": false,
+    "breakfast": false,
+    "familyFriendly": true,
+    "description": "Comfortable double room with additional amenities for a relaxed stay.",
+    "location": {
+      "city": "Marbella",
+      "country": "Spain"
+    },
+    "images": ["images/spain/familyy.png"]
+  },
+  {
+    "id": "3",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "card-single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "Marbella",
+      "country": "Spain"
+    },
+    "images": ["images/spain/red.png"]
+  },
+  {
+    "id": "4",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "Aiya napa",
+      "country": "Cyprus"
+    },
+    "images": ["images/cyprus/cyprusroom.png"]
+  },
+  {
+    "id": "5",
+    "name": "Family Deluxe",
+    "type": "family",
+    "slug": "family",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "Aiya napa",
+      "country": "Cyprus"
+    },
+    "images": ["images/cyprus/room10.png"]
+  },
+  {
+    "id": "6",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "Aiya napa",
+      "country": "Cyprus"
+    },
+    "images": ["images/cyprus/room9.png"]
+  },
+  {
+    "id": "7",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "paris",
+      "country": "France"
+    },
+    "images": ["images/france/franceroom.png"]
+  },
+  {
+    "id": "8",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Greece"
+    },
+    "images": ["images/greece/greceroom.png"]
+  },
+  {
+    "id": "9",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Greece"
+    },
+    "images": ["images/greece/double-deluxe.png"]
+  },
+  {
+    "id": "10",
+    "name": "Family Deluxe",
+    "type": "double",
+    "slug": "family-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Greece"
+    },
+    "images": ["images/greece/room4.png"]
+  },
+  {
+    "id": "11",
+    "name": "Family Deluxe",
+    "type": "double",
+    "slug": "family-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Italy"
+    },
+    "images": ["images/italy/room8.png"]
+  },
+  {
+    "id": "12",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Italy"
+    },
+    "images": ["images/italy/room6.png"]
+  },
+  {
+    "id": "13",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Italy"
+    },
+    "images": ["images/italy/single-deluxe.png"]
+  },
+  {
+    "id": "14",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Germany"
+    },
+    "images": ["images/germany/room.16.png"]
+  },
+  {
+    "id": "15",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Germany"
+    },
+    "images": ["images/germany/room11.png"]
+  },
+  {
+    "id": "16",
+    "name": "Family Deluxe",
+    "type": "family",
+    "slug": "family-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Germany"
+    },
+    "images": ["images/germany/red-white.png"]
+  },
+  {
+    "id": "17",
+    "name": "Family Deluxe",
+    "type": "family",
+    "slug": "family-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Portugal"
+    },
+    "images": ["images/portugal/room22.png"]
+  },
+  {
+    "id": "18",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Portugal"
+    },
+    "images": ["images/portugal/room20.png"]
+  },
+  {
+    "id": "19",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Portugal"
+    },
+    "images": ["images/portugal/room21.png"]
+  },
+  {
+    "id": "20",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Croatia"
+    },
+    "images": ["images/croatia/room25.png"]
+  },
+  {
+    "id": "21",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Croatia"
+    },
+    "images": ["images/croatia/room23.png"]
+  },
+  {
+    "id": "22",
+    "name": "Family Deluxe",
+    "type": "family",
+    "slug": "family",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Croatia"
+    },
+    "images": ["images/croatia/room.24.png"]
+  },
+  {
+    "id": "23",
+    "name": "Family Deluxe",
+    "type": "family",
+    "slug": "family",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Malta"
+    },
+    "images": ["images/malta/room28.png"]
+  },
+  {
+    "id": "24",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Malta"
+    },
+    "images": ["images/malta/room26.png"]
+  },
+  {
+    "id": "25",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Malta"
+    },
+    "images": ["images/malta/room27.png"]
+  },
+  {
+    "id": "26",
+    "name": "Single Deluxe",
+    "type": "Single",
+    "slug": "single-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Slovakia"
+    },
+    "images": ["images/slovakia/room31.png"]
+  },
+  {
+    "id": "27",
+    "name": "Family Deluxe",
+    "type": "family",
+    "slug": "family-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Slovakia"
+    },
+    "images": ["images/slovakia/room29.png"]
+  },
+  {
+    "id": "28",
+    "name": "Double Deluxe",
+    "type": "double",
+    "slug": "double-deluxe",
+    "price": 200,
+    "size": 300,
+    "capacity": 3,
+    "pets": true,
+    "breakfast": false,
+    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "location": {
+      "city": "",
+      "country": "Slovakia"
+    },
+    "images": ["images/slovakia/room30.png"]
+  }
+]
