@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 function RoomCard({ room }) {
   if (!room) return null;
 
-  const { name, slug, images, price } = room;
+  const { name, id, images, price } = room;
 
   return (
     <article className="room">
-      <Link to={`/rooms/${slug}`} className="img-container">
+      <Link to={`/rooms/${id}`} className="img-container">
         <img src={`/${images[0]}`} alt={name} />
         <div className="pricetop-list">
           <h5>${price}</h5>
