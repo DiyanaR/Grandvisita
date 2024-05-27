@@ -1,30 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-import { useLocation } from "react-router-dom";
-
-function BookingForm({ price, handleBooking }) {
+function BookingForm({ price, handleBooking, room }) {
   const [checkInDate, setCheckInDate] = useState("");
   const [checkOutDate, setCheckOutDate] = useState("");
   const [adults, setAdults] = useState(1);
   const [kids, setKids] = useState(0);
 
-  let location = useLocation();
+  console.log("Room object", room);
 
-  function checkSingle() {
-    if (location.pathname.includes("single")) {
-      let singleRoom = document.getElementById("kids");
-      let singleRoom2 = document.getElementById("kids2");
-      singleRoom.style.display = "none";
-      singleRoom2.style.display = "none";
-    }
-  }
-
-  useEffect(() => {
-    console.log(location.pathname);
-    checkSingle();
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location]);
+  const showKidsInput = room && room.capacity > 1;
 
   return (
     <div className="booking-form">
@@ -63,19 +47,22 @@ function BookingForm({ price, handleBooking }) {
             required
           />
         </div>
-        <div className="form-group">
-          <label id="kids2" htmlFor="kids">
-            Kids
-          </label>
-          <input
-            type="number"
-            id="kids"
-            className="form-control"
-            value={kids}
-            onChange={(e) => setKids(e.target.value)}
-            required
-          />
-        </div>
+        {showKidsInput && (
+          <div className="form-group">
+            <label id="kids2" htmlFor="kids">
+              Kids
+            </label>
+            <input
+              type="number"
+              id="kids"
+              className="form-control"
+              value={kids}
+              onChange={(e) => setKids(e.target.value)}
+              required
+            />
+          </div>
+        )}
+
         <button type="submit" className="btn-primary">
           {" "}
           Book now for €{price}

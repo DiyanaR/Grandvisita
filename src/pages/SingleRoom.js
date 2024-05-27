@@ -29,7 +29,11 @@ function SingleRoom() {
       <div className="single-room-content">
         <div className="single-room-images">
           <img src={`/${images[0]}`} alt={name} />
-          <BookingForm price={price} handleBooking={handleBooking} />
+          <BookingForm
+            price={price}
+            handleBooking={handleBooking}
+            room={room}
+          />
         </div>
         <div className="single-room-info">
           <article className="desc">
