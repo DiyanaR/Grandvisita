@@ -19,7 +19,21 @@
       "country": "Spain"
     },
 
-    "images": ["images/spain/marbellarum.png"]
+    "images": ["images/spain/marbellarum.png"],
+    "nearbyRestaurants": [
+      {
+        "name": "Messina",
+        "city": "Marbella",
+        "country": "Spain",
+        "image": "images/spain/messina.png"
+      },
+      {
+        "name": "Skina",
+        "city": "Marbella",
+        "country": "Spain",
+        "image": "images/spain/skina.png"
+      }
+    ]
   },
   {
     "id": "2",
@@ -153,7 +167,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Athen",
       "country": "Greece"
     },
     "images": ["images/greece/greceroom.png"]
@@ -170,7 +184,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Athen",
       "country": "Greece"
     },
     "images": ["images/greece/double-deluxe.png"]
@@ -187,7 +201,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Athen",
       "country": "Greece"
     },
     "images": ["images/greece/room4.png"]
@@ -204,7 +218,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Rome",
       "country": "Italy"
     },
     "images": ["images/italy/room8.png"]
@@ -221,7 +235,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Rome",
       "country": "Italy"
     },
     "images": ["images/italy/room6.png"]
@@ -238,7 +252,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Rome",
       "country": "Italy"
     },
     "images": ["images/italy/single-deluxe.png"]
@@ -255,7 +269,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Munich",
       "country": "Germany"
     },
     "images": ["images/germany/room.16.png"]
@@ -272,7 +286,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Munich",
       "country": "Germany"
     },
     "images": ["images/germany/room11.png"]
@@ -289,7 +303,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Munich",
       "country": "Germany"
     },
     "images": ["images/germany/red-white.png"]
@@ -306,7 +320,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Lisbon",
       "country": "Portugal"
     },
     "images": ["images/portugal/room22.png"]
@@ -323,7 +337,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Lisbon",
       "country": "Portugal"
     },
     "images": ["images/portugal/room20.png"]
@@ -340,7 +354,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Lisbon",
       "country": "Portugal"
     },
     "images": ["images/portugal/room21.png"]
@@ -357,7 +371,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Zagreb",
       "country": "Croatia"
     },
     "images": ["images/croatia/room25.png"]
@@ -374,7 +388,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Zagreb",
       "country": "Croatia"
     },
     "images": ["images/croatia/room23.png"]
@@ -391,7 +405,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Zagreb",
       "country": "Croatia"
     },
     "images": ["images/croatia/room.24.png"]
@@ -408,7 +422,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Valletta",
       "country": "Malta"
     },
     "images": ["images/malta/room28.png"]
@@ -425,7 +439,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Valletta",
       "country": "Malta"
     },
     "images": ["images/malta/room26.png"]
@@ -442,7 +456,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Valletta",
       "country": "Malta"
     },
     "images": ["images/malta/room27.png"]
@@ -459,7 +473,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Poprad",
       "country": "Slovakia"
     },
     "images": ["images/slovakia/room31.png"]
@@ -476,7 +490,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Poprad",
       "country": "Slovakia"
     },
     "images": ["images/slovakia/room29.png"]
@@ -493,7 +507,7 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "",
+      "city": "Poprad",
       "country": "Slovakia"
     },
     "images": ["images/slovakia/room30.png"]

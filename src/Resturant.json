@@ -1,0 +1,124 @@
+[
+  {
+    "Cyprus": {
+      "Ayia Napa": [
+        {
+          "name": "Cyprus Tavern",
+          "address": "Nissi Avenue, 5330 Ayia Napa, Cyprus"
+        },
+        {
+          "name": "Sage Restaurant & Wine Bar",
+          "address": "Ayia Napa Harbour, 53 Kryou Nerou, Ayia Napa 5330, Cyprus"
+        }
+      ]
+    },
+    "France": {
+      "Paris": [
+        {
+          "name": "Le Jules Verne",
+          "address": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France"
+        },
+        {
+          "name": "Dinner in the Sky Paris",
+          "address": "99 Rue de Rivoli, 75001 Paris, France"
+        }
+      ]
+    },
+    "Greece": {
+      "Athens": [
+        {
+          "name": "Spondi",
+          "address": "Pyrronos 5, Athina 116 36, Greece"
+        },
+        {
+          "name": "Nolan",
+          "address": "Ag. Asomaton 8, Athina 105 53, Greece"
+        }
+      ]
+    },
+    "Italy": {
+      "Rome": [
+        {
+          "name": "La Pergola",
+          "address": "Rome Cavalieri, A Waldorf Astoria Hotel, Via Alberto Cadlolo 101, 00136 Roma RM, Italy"
+        },
+        {
+          "name": "Roscioli",
+          "address": "Via dei Giubbonari, 21/22, 00186 Roma RM, Italy"
+        }
+      ]
+    },
+    "Croatia": {
+      "Zagreb": [
+        {
+          "name": "Vinodol",
+          "address": "Teslina ul. 10, 10000, Zagreb, Croatia"
+        },
+        {
+          "name": "Dubravkin put",
+          "address": "Dubravkin put 2, 10000, Zagreb, Croatia"
+        }
+      ]
+    },
+    "Malta": {
+      "Valletta": [
+        {
+          "name": "Palazzo Preca",
+          "address": "54 Strait St, Valletta, Malta"
+        },
+        {
+          "name": "Da Pippo Trattoria",
+          "address": "35 Strait St, Valletta, Malta"
+        }
+      ]
+    },
+    "Portugal": {
+      "Lisbon": [
+        {
+          "name": "Belcanto",
+          "address": "Largo de São Carlos 10, 1200-410 Lisboa, Portugal"
+        },
+        {
+          "name": "The Old Pharmacy",
+          "address": "R. do Diário de Notícias 73, 1200-142 Lisboa, Portugal"
+        }
+      ]
+    },
+    "Slovakia": {
+      "Poprad": [
+        {
+          "name": "Chata pod Soliskom",
+          "address": "Štrbské Pleso 1, 059 85 Vysoké Tatry, Slovakia"
+        },
+        {
+          "name": "Bistro u Ázora",
+          "address": "Tatranská 1, 058 01 Poprad, Slovakia"
+        }
+      ]
+    },
+    "Spain": {
+      "Marbella": [
+        {
+          "name": "Messina",
+          "address": "Avenida Severo Ochoa 12, Marbella, Spain"
+        },
+        {
+          "name": "Skina",
+          "address": "Calle Aduar 12, Marbella, Spain"
+        }
+      ]
+    },
+    "Germany": {
+      "Munich": [
+        {
+          "name": "Tantris",
+          "address": "Johann-Fichte-Str. 7, 80805 München, Germany"
+        },
+        {
+          "name": "Alois Dallmayr",
+          "address": "Dienerstraße 14-15, 80331 München, Germany"
+        }
+      ]
+    }
+  }
+]

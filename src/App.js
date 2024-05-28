@@ -5,8 +5,10 @@ import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
 import SearchPage from "./components/SearchPage";
+import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
+import Restaurant from "./pages/Resturant";
 import { RoomProvider } from "./RoomProvider";
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/rooms/:slug" element={<SingleRoom />} />
           <Route path="/search" element={<SearchPage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resturant" element={<Restaurant />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </RoomProvider>
