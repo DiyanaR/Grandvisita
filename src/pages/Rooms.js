@@ -1,16 +1,18 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banderol";
+import Select from "react-select";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
 import { Link } from "react-router-dom";
 import roomsData from "../Rooms.json";
-import resturantData from "../Resturant.json";
 
 function FilterForm() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [roomType, setRoomType] = useState("");
   const [filteredRooms, setFilteredRooms] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+  const [selectedLocation, setSelectedLocation] = useState("");
   const [rooms, setRooms] = useState([]);
+  const [maxPrice, setMaxPrice] = useState(1000);
 
   useEffect(() => {
     setRooms(roomsData);
@@ -30,23 +32,25 @@ function FilterForm() {
         room.location.country
           .toLowerCase()
           .includes(searchCountry.toLowerCase());
-      const typeMatches = !roomType || room.type === roomType;
-      return (cityMatched || countryMatches) && typeMatches;
+      const priceMatches = room.price <= maxPrice;
+
+      return cityMatched && countryMatches && priceMatches;
     });
 
     setFilteredRooms(filtered);
-  }, [rooms, searchTerm, roomType]);
+  }, [rooms, searchTerm, maxPrice]);
 
   useEffect(() => {
     filterRooms();
-  }, [searchTerm, roomType, filterRooms]);
+  }, [searchTerm, maxPrice, filterRooms]);
 
-  const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
+  const handleSearchChange = (selectedOption) => {
+    setSearchTerm(selectedOption ? selectedOption.value : "");
+    setSelectedLocation(selectedOption ? selectedOption.label : "");
   };
 
-  const handleRoomTypeChange = (e) => {
-    setRoomType(e.target.value);
+  const handlePriceChange = (value) => {
+    setMaxPrice(value);
   };
 
   return (
@@ -62,43 +66,51 @@ function FilterForm() {
       <div className="search-container">
         <h1 className="section-title">Our Most Popular Destinations</h1>
         <form className="search-form" onSubmit={(e) => e.preventDefault()}>
-          <select
+          <Select
             className="dropdown"
-            value={searchTerm}
+            options={[
+              { label: "Popular destinations", value: "" },
+              { label: "Cyprus - Ayia Napa", value: "Cyprus, Ayia Napa" },
+              { label: "France - Paris", value: "France, Paris" },
+              { label: "Greece - Athen", value: "Greece, Athen" },
+              { label: "Italy - Rome", value: "Italy, Rome" },
+              { label: "Croatia - Zagreb", value: "Croatia, Zagreb" },
+              { label: "Malta - Valletta", value: "Malta, Valletta" },
+              { label: "Portugal - Lisbon", value: "Portugal, Lisbon" },
+              { label: "Slovakia - Poprad", value: "Slovakia, Poprad" },
+              { label: "Spain - Marbella", value: "Spain, Marbella" },
+              { label: "Germany - Munich", value: "Germany, Munich" },
+            ]}
+            value={
+              selectedLocation
+                ? { label: selectedLocation, value: searchTerm }
+                : null
+            }
             onChange={handleSearchChange}
-          >
-            <option>Popular destinations</option>
-            <option value="Cyprus, Ayia Napa">Cyprus - Ayia Napa</option>
-            <option value="France, Paris">France - Paris</option>
-            <option value="Greece, Athen">Greece - Athen</option>
-            <option value="Italy, Rome">Italy - Rome</option>
-            <option value="Croatia, Zagreb">Croatia - Zagreb </option>
-            <option value="Malta, Valletta">Malta - Valletta</option>
-            <option value="Portugal, Lisbon">Portugal - Lisbon</option>
-            <option value="Slovakia, Poprad">Slovakia - Poprad</option>
-            <option value="Spain, Marbella">Spain - Marbella</option>
-            <option value="Germany, Munich">Germany - Munich</option>
-          </select>
-          <select
-            className="search-input"
-            value={roomType}
-            onChange={handleRoomTypeChange}
-          >
-            <option value="">Select Room Type</option>
-            <option value="Single Deluxe">Single Deluxe</option>
-            <option value="Double Deluxe">Double Deluxe</option>
-            <option value="Family Deluxe">Family Deluxe</option>
-          </select>
+            placeholder="Popular destinations"
+          />
+
+          <div className="price-filter">
+            <label>Max price per night: ${maxPrice}</label>
+            <Slider
+              min={0}
+              max={1000}
+              step={10}
+              value={maxPrice}
+              onChange={handlePriceChange}
+            />
+          </div>
         </form>
+
+        <p className="selected-location"> {selectedLocation}</p>
 
         <section className="roomslist">
           <div className="roomslist-center">
-            {filteredRooms.length > 0 || searchTerm || roomType ? (
+            {filteredRooms.length > 0 || searchTerm ? (
               filteredRooms.map((room) => (
                 <article key={room.id} className="room">
                   <Link to={`/rooms/${room.id}`} className="img-container">
                     <img src={`/${room.images[0]}`} alt={room.name} />
-
                     <div className="pricetop-list">
                       <h5>${room.price}</h5>
                       <p>per night</p>
@@ -109,29 +121,6 @@ function FilterForm() {
               ))
             ) : (
               <div>No rooms available</div>
-            )}
-          </div>
-        </section>
-        <section className="restaurants-list">
-          <h2>Restaurants</h2>
-          <div className="restaurants-list-center">
-            {filteredRestaurants.length > 0 ? (
-              filteredRestaurants.map((restaurant) => (
-                <article key={restaurant.id} className="restaurant">
-                  <Link
-                    to={`/restaurants/${restaurant.id}`}
-                    className="img-container"
-                  >
-                    <img
-                      src={`/${restaurant.images[0]}`}
-                      alt={restaurant.name}
-                    />
-                  </Link>
-                  <p className="restaurant-info">{restaurant.name}</p>
-                </article>
-              ))
-            ) : (
-              <div>No restaurants available</div>
             )}
           </div>
         </section>

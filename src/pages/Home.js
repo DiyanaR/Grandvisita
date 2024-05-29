@@ -4,7 +4,6 @@ import Banner from "../components/Banderol";
 import { Link } from "react-router-dom";
 import Benefit from "../components/Benefit";
 import PopularRooms from "../components/PopularRooms";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -22,7 +21,6 @@ function Home() {
 
       <Benefit />
       <PopularRooms />
-      <Footer />
     </>
   );
 }
