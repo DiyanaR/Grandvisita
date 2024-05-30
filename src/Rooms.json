@@ -13,7 +13,7 @@
     "wifi": true,
     "meals": true,
     "tv": true,
-    "description": "Comfortable double room with additional amenities for a relaxed stay",
+    "description": "Luxurious Double Retreat: Indulge in luxury and comfort in our double deluxe rooms, perfect for couples seeking a romantic getaway or travelers desiring extra space. With upscale amenities and elegant décor, these rooms offer a lavish retreat.",
     "location": {
       "city": "Marbella",
       "country": "Spain"
@@ -46,7 +46,7 @@
     "pets": false,
     "breakfast": false,
     "familyFriendly": true,
-    "description": "Comfortable double room with additional amenities for a relaxed stay.",
+    "description": "Spacious Family Room: Enjoy plenty of space for the whole family in our Family Deluxe room. Perfect for families traveling together who want convenience and comfort during their stay.",
     "location": {
       "city": "Marbella",
       "country": "Spain"
@@ -63,7 +63,7 @@
     "capacity": 1,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Cozy Single Retreat: Our single rooms offer a cozy retreat for solo travelers seeking comfort and convenience. With thoughtful amenities and a welcoming atmosphere, these rooms provide the perfect sanctuary after a day of exploration.",
     "location": {
       "city": "Marbella",
       "country": "Spain"
@@ -80,7 +80,7 @@
     "capacity": 3,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Spacious Double Haven: Experience spaciousness and serenity in our double deluxe rooms, ideal for couples or friends traveling together. Enjoy ample room to unwind and relax, with modern conveniences at your fingertips.",
     "location": {
       "city": "Aiya napa",
       "country": "Cyprus"
@@ -97,7 +97,7 @@
     "capacity": 4,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Elegant Family Suite: Discover the luxury of our Family Deluxe suite, where elegance meets functionality. With separate sleeping and living areas, this suite offers a relaxing and practical space for the family to unwind and enjoy.",
     "location": {
       "city": "Aiya napa",
       "country": "Cyprus"
@@ -114,7 +114,7 @@
     "capacity": 1,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Modern Family Unit: Our Family Deluxe unit combines modern amenities with family-friendly design. Featuring comfortable beds and carefully designed spaces, this room is perfect for a memorable family vacation.",
     "location": {
       "city": "Aiya napa",
       "country": "Cyprus"
@@ -131,7 +131,7 @@
     "capacity": 4,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Elegant Double Escape: Discover elegance and sophistication in our double deluxe rooms, where every detail is designed for your comfort and enjoyment. From plush furnishings to luxurious bedding, these rooms offer a refined retreat for discerning guests.",
     "location": {
       "city": "paris",
       "country": "France"
@@ -148,7 +148,7 @@
     "capacity": 4,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Family-Friendly Accommodation: Welcome to our Family Deluxe accommodation, where every detail is designed with the family's comfort and enjoyment in mind. From spacious bedrooms to child-friendly facilities, this accommodation offers everything a family needs for a delightful stay.",
     "location": {
       "city": "paris",
       "country": "France"
@@ -165,7 +165,7 @@
     "capacity": 1,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Tranquil Solo Haven: Experience tranquility in our single rooms, designed for solo travelers seeking a peaceful getaway. Enjoy a comfortable space to relax and recharge, complete with all the essentials for a pleasant stay.",
     "location": {
       "city": "Athen",
       "country": "Greece"
@@ -182,7 +182,7 @@
     "capacity": 4,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Chic Double Hideaway: Retreat to chic comfort in our double deluxe rooms, featuring stylish décor and contemporary amenities. Whether you're traveling with a loved one or a friend, these rooms provide a trendy yet cozy escape.",
     "location": {
       "city": "Athen",
       "country": "Greece"
@@ -199,7 +199,7 @@
     "capacity": 4,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Relaxing Family Getaway: Give your family a relaxing and comfortable stay in our Family Deluxe room. With generous amenities and an atmosphere of tranquility, this is the perfect choice for a memorable family vacation.",
     "location": {
       "city": "Athen",
       "country": "Greece"
@@ -233,7 +233,7 @@
     "capacity": 3,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Comfortable Double Oasis: Find comfort and relaxation in our double deluxe rooms, thoughtfully appointed to ensure a restful stay. With spacious layouts and upscale touches, these rooms offer a tranquil oasis for your travels.",
     "location": {
       "city": "Rome",
       "country": "Italy"
@@ -250,7 +250,7 @@
     "capacity": 1,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Charming Solo Escape: Step into a charming solo escape in our single rooms, where comfort meets affordability. Perfect for travelers seeking a private space with modern conveniences and a warm ambiance.",
     "location": {
       "city": "Rome",
       "country": "Italy"
@@ -267,7 +267,7 @@
     "capacity": 1,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Comfortable Solo Sanctuary: Find comfort and solace in our single rooms, thoughtfully designed for solo travelers. Unwind in a cozy atmosphere and enjoy a restful night's sleep in a comfortable bed. ",
     "location": {
       "city": "Munich",
       "country": "Germany"
@@ -352,7 +352,7 @@
     "capacity": 1,
     "pets": true,
     "breakfast": false,
-    "description": "Spacious family room with extra facilities for a luxurious experience.",
+    "description": "Modern Solo Oasis: Retreat to a modern oasis designed for solo travelers in our single rooms. Featuring contemporary amenities and stylish décor, these rooms offer the perfect blend of comfort and functionality.",
     "location": {
       "city": "Lisbon",
       "country": "Portugal"

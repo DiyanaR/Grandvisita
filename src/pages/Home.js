@@ -11,7 +11,7 @@ function Home() {
       <Hero>
         <Banner
           title="luxourius rooms"
-          subtitle="deluxe rooms starting at €299"
+          subtitle="deluxe rooms starting at €100"
         >
           <Link to="/rooms" className="btn-primary">
             our rooms

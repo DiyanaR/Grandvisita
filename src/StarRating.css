@@ -1,0 +1,38 @@
+.star-rating-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.star-rating-container .fa-star {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star-rating-container .fa-star.inactive {
+  cursor: not-allowed;
+}
+
+.star-rating-container p {
+  margin-top: 10px;
+}
+
+.star-rating-container button {
+  margin-top: 10px;
+}
+
+.star-rating-container .rating-distribution {
+  margin-top: 20px;
+}
+
+.star-rating-container .rating-line {
+  margin-bottom: 8px;
+}
+
+.star-rating-container .rating-line span {
+  margin-right: 8px;
+}
+
+.star-rating-container .rating-line .rating-bar {
+  background-color: #ffc107;
+  height: 20px;
+}
