@@ -1,6 +1,7 @@
 // import React, { useState } from "react";
+// import Swal from "sweetalert2";
 
-// function BookingForm({ price, handleBooking, room }) {
+// function BookingForm({ price, room }) {
 //   const [checkInDate, setCheckInDate] = useState("");
 //   const [checkOutDate, setCheckOutDate] = useState("");
 //   const [adults, setAdults] = useState(1);
@@ -13,15 +14,21 @@
 
 //   const handleSubmit = (e) => {
 //     e.preventDefault();
-//     // Anropa handleBooking-funktionen här om all validering är klar
-//     // Visar modalen när bokningen lyckas
+
+//     Swal.fire({
+//       icon: "success",
+//       title: "Your booking is successful!",
+//       showConfirmButton: false,
+//       timer: 5000,
+//     });
+
 //     setShowModal(true);
 //   };
 
 //   return (
 //     <div className="booking-form">
 //       <h3>Book this room</h3>
-//       <form onSubmit={handleBooking}>
+//       <form onSubmit={handleSubmit}>
 //         <div className="form-group">
 //           <label htmlFor="check-in">Check in Date</label>
 //           <input
@@ -83,7 +90,6 @@
 //               &times;
 //             </span>
 //             <p>Your booking is successful!</p>
-//             {/* You can add more details about the booking here */}
 //           </div>
 //         </div>
 //       )}
@@ -94,7 +100,9 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 
-function BookingForm({ price, handleBooking, room }) {
+function BookingForm({ price, room }) {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
   const [checkInDate, setCheckInDate] = useState("");
   const [checkOutDate, setCheckOutDate] = useState("");
   const [adults, setAdults] = useState(1);
@@ -112,7 +120,7 @@ function BookingForm({ price, handleBooking, room }) {
       icon: "success",
       title: "Your booking is successful!",
       showConfirmButton: false,
-      timer: 5000, // Visa modalen i 5 sekunder
+      timer: 5000,
     });
 
     setShowModal(true);
@@ -122,6 +130,28 @@ function BookingForm({ price, handleBooking, room }) {
     <div className="booking-form">
       <h3>Book this room</h3>
       <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="fullName">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            className="form-control"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            className="form-control"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
         <div className="form-group">
           <label htmlFor="check-in">Check in Date</label>
           <input
@@ -157,7 +187,7 @@ function BookingForm({ price, handleBooking, room }) {
         </div>
         {showKidsInput && (
           <div className="form-group">
-            <label id="kids2" htmlFor="kids">
+            <label id="kids" htmlFor="kids">
               Kids
             </label>
             <input
@@ -189,4 +219,5 @@ function BookingForm({ price, handleBooking, room }) {
     </div>
   );
 }
+
 export default BookingForm;

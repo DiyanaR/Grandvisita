@@ -1,33 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const [submitted, setSubmitted] = React.useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
+  const onSubmit = (data) => {
     emailjs
-      .send(
-        "YOUR_SERVICE_ID", // Byt ut mot ditt EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Byt ut mot ditt EmailJS template ID
-        formData,
-        "YOUR_USER_ID" // Byt ut mot ditt EmailJS user ID
-      )
+      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_USER_ID")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setSubmitted(true);
-        setFormData({ name: "", email: "", message: "" });
+        reset();
       })
       .catch((err) => {
         console.error("FAILED...", err);
@@ -36,36 +26,31 @@ const ContactForm = () => {
 
   return (
     <div className="contact-container">
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
         <h2>Kontakta oss</h2>
+
         <label htmlFor="name">Namn</label>
         <input
           type="text"
           id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
+          {...register("name", { required: true })}
         />
+        {errors.name && <span>Namn är obligatoriskt</span>}
 
         <label htmlFor="email">E-post</label>
         <input
           type="email"
           id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
+          {...register("email", { required: true })}
         />
+        {errors.email && <span>E-post är obligatoriskt</span>}
 
         <label htmlFor="message">Meddelande</label>
         <textarea
           id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
+          {...register("message", { required: true })}
         ></textarea>
+        {errors.message && <span>Meddelande är obligatoriskt</span>}
 
         <button type="submit">Skicka</button>
 

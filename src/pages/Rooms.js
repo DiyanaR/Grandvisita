@@ -91,7 +91,7 @@ function FilterForm() {
           />
 
           <div className="price-filter">
-            <label>Max price per night: ${maxPrice}</label>
+            <label>Max price per night: €{maxPrice}</label>
             <Slider
               min={0}
               max={1000}
