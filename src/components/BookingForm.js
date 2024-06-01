@@ -9,20 +9,27 @@ function BookingForm({ price, room }) {
   const [adults, setAdults] = useState(1);
   const [kids, setKids] = useState(0);
   const [showModal, setShowModal] = useState(false);
+  const [bookingNumber, setBookingNumber] = useState(null);
 
   console.log("Room object", room);
 
   const showKidsInput = room && room.capacity > 1;
 
+  const generateBookingNumber = () => {
+    return `BN-${Date.now()}-${Math.floor(Math.random() * 10000)}`;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    const bookingNum = generateBookingNumber();
+    setBookingNumber(bookingNum);
 
     Swal.fire({
       icon: "success",
       title: "Your booking is successful!",
       showConfirmButton: false,
       timer: 6000,
-      html: 'Book your <a href="/spatreatments">free treatment</a> here.',
+      html: `Your booking number is ${bookingNum}. Book your <a href="/spatreatments?bookingNumber=${bookingNum}">free treatment</a> here.`,
     });
 
     setShowModal(true);
@@ -104,7 +111,6 @@ function BookingForm({ price, room }) {
         )}
 
         <button type="submit" className="btn-primary">
-          {" "}
           Book now for €{price}
         </button>
       </form>
@@ -114,7 +120,10 @@ function BookingForm({ price, room }) {
             <span className="close" onClick={() => setShowModal(false)}>
               &times;
             </span>
-            <p>Your booking is successful!</p>
+            <p>
+              Your booking is successful! Your booking number is {bookingNumber}
+              .
+            </p>
           </div>
         </div>
       )}
