@@ -26,7 +26,7 @@ function Benefit() {
         <>
           If you book one of our luxurious rooms, you will always get to choose
           a complimentary spa treatment.
-          <a href="/spa" target="_blank" rel="noreferrer">
+          <a href="/spatreatments" target="_blank" rel="noreferrer">
             Learn more and book your spa
           </a>
         </>
