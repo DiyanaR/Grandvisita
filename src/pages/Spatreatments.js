@@ -93,7 +93,7 @@ function Spatreatments() {
                 />
                 <button
                   onClick={() => handleBookingSubmit(treatment)}
-                  className="booking-button"
+                  className="btn-primary"
                   disabled={hasBooked}
                 >
                   {hasBooked ? "Treatment Booked" : "Book Treatment"}
