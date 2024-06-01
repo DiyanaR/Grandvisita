@@ -11,6 +11,7 @@ function Spatreatments() {
   const [treatments, setTreatments] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [hasBooked, setHasBooked] = useState(false);
+  const [showAllTreatments, setShowAllTreatments] = useState(true);
   const query = useQuery();
   const bookingNumber = query.get("bookingNumber");
 
@@ -26,11 +27,8 @@ function Spatreatments() {
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
+    setShowAllTreatments(false);
   };
-
-  const filteredTreatments = treatments.filter((treatment) =>
-    treatment.name.toLowerCase().startsWith(searchTerm.toLowerCase())
-  );
 
   const handleBookingSubmit = (treatment) => {
     if (!bookingNumber) {
@@ -62,6 +60,10 @@ function Spatreatments() {
     });
   };
 
+  const filteredTreatments = treatments.filter((treatment) =>
+    treatment.name.toLowerCase().startsWith(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="spa-page">
       <div className="title-spa">
@@ -77,9 +79,9 @@ function Spatreatments() {
         />
       </div>
       <div className="spa-content">
-        {searchTerm && searchTerm.trim() !== "" && (
-          <div className="treatments-grid">
-            {filteredTreatments.map((treatment) => (
+        <div className="treatments-grid">
+          {(showAllTreatments ? treatments : filteredTreatments).map(
+            (treatment) => (
               <div key={treatment.id} className="treatment-item">
                 <h3 className="treatment-name">{treatment.name}</h3>
                 <p className="treatment-description">{treatment.description}</p>
@@ -99,9 +101,9 @@ function Spatreatments() {
                   {hasBooked ? "Treatment Booked" : "Book Treatment"}
                 </button>
               </div>
-            ))}
-          </div>
-        )}
+            )
+          )}
+        </div>
       </div>
     </div>
   );
