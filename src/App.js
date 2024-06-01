@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Spatreatments from "./pages/Spatreatments";
 
 import LiveChat from "./components/LiveChat";
 
@@ -23,7 +24,7 @@ function App() {
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/rooms/:slug" element={<SingleRoom />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/Spatreatments" element={<Spatreatments />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </RoomProvider>

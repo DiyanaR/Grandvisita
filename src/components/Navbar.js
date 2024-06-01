@@ -31,7 +31,7 @@ function Navbar() {
             <Link to="/resturant">Resturant</Link>
           </li>
           <li>
-            <Link to="/spa">SPA</Link>
+            <Link to="/spatreatments">SPA</Link>
           </li>
           <li>
             <Link to="/contact">Contact Us</Link>

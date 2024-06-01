@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Massage",
+    "description": "A classic relaxing massage to reduce stress and tension in the body.",
+    "duration": "60 minutes",
+    "image": "images/treatments/massage.png"
+  },
+  {
+    "id": 2,
+    "name": "Facial Treatment",
+    "description": "A treatment to cleanse, moisturize, and rejuvenate the skin on the face.",
+    "duration": "45 minutes",
+    "image": "images/treatments/Faicaltreatment.png"
+  },
+  {
+    "id": 3,
+    "name": "Manicure and Pedicure",
+    "description": "Beauty treatments to care for the hands and feet, including nail care and massage.",
+    "duration": "60 minutes",
+    "image": "images/treatments/Manicureandpedicure.png"
+  },
+
+  {
+    "id": 4,
+    "name": "Body Scrub",
+    "description": "An exfoliating treatment to remove dead skin cells and leave the skin soft and smooth.",
+    "duration": "45 minutes",
+    "image": "images/treatments/Bodyscrub.png"
+  },
+  {
+    "id": 5,
+    "name": "Aromatherapy Treatment",
+    "description": "A therapeutic treatment using essential oils to promote relaxation and well-being.",
+    "duration": "60 minutes",
+    "image": "images/treatments/Aromatherapy.png"
+  },
+  {
+    "id": 6,
+    "name": "Hot Stone Massage",
+    "description": "A massage treatment where heated stones are placed on the body to relax muscles and promote relaxation.",
+    "duration": "75 minutes",
+    "image": "images/treatments/hotstone.png"
+  },
+  {
+    "id": 7,
+    "name": "Deep Tissue Massage",
+    "description": "A massage treatment that focuses on releasing deep-seated muscle tension and stiffness.",
+    "duration": "60 minutes",
+    "image": "images/treatments/Deeptissuemassage.png"
+  },
+  {
+    "id": 8,
+    "name": "Acupuncture",
+    "description": "A traditional Chinese treatment method involving the placement of thin needles on various points of the body to promote healing and well-being.",
+    "duration": "45 minutes",
+    "image": "images/treatments/Acupuncture.png"
+  },
+  {
+    "id": 9,
+    "name": "Yoga and Meditation Sessions",
+    "description": "Group sessions or individual guidance to promote relaxation, flexibility, and peace of mind.",
+    "duration": "60 minutes",
+    "image": "images/treatments/Meditation.png"
+  }
+]

@@ -1,11 +1,6 @@
 import React from "react";
 import Title from "./Title";
-import {
-  FaShuttleVan,
-  FaCoffee,
-  FaUtensils,
-  FaMapMarkedAlt,
-} from "react-icons/fa";
+import { FaShuttleVan, FaCoffee, FaUtensils, FaSpa } from "react-icons/fa";
 
 function Benefit() {
   const offers = [
@@ -25,14 +20,14 @@ function Benefit() {
       info: "We offer convenient trasport to and from the airport for all our guest",
     },
     {
-      icon: <FaMapMarkedAlt />,
-      Title: "Nearby Restaurants",
+      icon: <FaSpa />,
+      Title: "Spa Treatments",
       info: (
         <>
-          We have partnerships with several nearby resturants where you ca enjoy
-          discounted prices.
-          <a href="/resturant" target="_blank" rel="nopper noreferrer">
-            Learn more and navigate to them
+          If you book one of our luxurious rooms, you will always get to choose
+          a complimentary spa treatment.
+          <a href="/spa" target="_blank" rel="noreferrer">
+            Learn more and book your spa
           </a>
         </>
       ),

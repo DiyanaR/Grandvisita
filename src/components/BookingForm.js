@@ -21,8 +21,8 @@ function BookingForm({ price, room }) {
       icon: "success",
       title: "Your booking is successful!",
       showConfirmButton: false,
-      timer: 5000,
-      html: 'Book your <a href="/spa">free treatment</a> here.',
+      timer: 6000,
+      html: 'Book your <a href="/spatreatments">free treatment</a> here.',
     });
 
     setShowModal(true);

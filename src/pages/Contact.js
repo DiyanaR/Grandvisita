@@ -1,60 +1,81 @@
-import React from "react";
-import { useForm } from "react-hook-form";
-import emailjs from "emailjs-com";
+import React, { useState } from "react";
 
 const ContactForm = () => {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
-  const [submitted, setSubmitted] = React.useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
 
-  const onSubmit = (data) => {
-    emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_USER_ID")
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        setSubmitted(true);
-        reset();
-      })
-      .catch((err) => {
-        console.error("FAILED...", err);
-      });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!formData.name) {
+      setErrors({ name: "Name is required" });
+      return;
+    }
+
+    if (!formData.email) {
+      setErrors({ email: "Email is required" });
+      return;
+    }
+
+    if (!formData.message) {
+      setErrors({ message: "Message is required" });
+      return;
+    }
+
+    console.log("Form submitted:", formData);
+
+    setSubmitted(true);
   };
 
   return (
     <div className="contact-container">
-      <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
-        <h2>Kontakta oss</h2>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <h2>Contact Us</h2>
 
-        <label htmlFor="name">Namn</label>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
           id="name"
-          {...register("name", { required: true })}
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
         />
-        {errors.name && <span>Namn är obligatoriskt</span>}
+        {errors.name && <span>{errors.name}</span>}
 
-        <label htmlFor="email">E-post</label>
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
-          {...register("email", { required: true })}
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
         />
-        {errors.email && <span>E-post är obligatoriskt</span>}
+        {errors.email && <span>{errors.email}</span>}
 
-        <label htmlFor="message">Meddelande</label>
+        <label htmlFor="message">Message</label>
         <textarea
           id="message"
-          {...register("message", { required: true })}
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
         ></textarea>
-        {errors.message && <span>Meddelande är obligatoriskt</span>}
+        {errors.message && <span>{errors.message}</span>}
 
-        <button type="submit">Skicka</button>
+        <button type="submit">Submit</button>
 
-        {submitted && <p className="confirmation">Tack för ditt meddelande!</p>}
+        {submitted && (
+          <p className="confirmation">Thank you for your message!</p>
+        )}
       </form>
     </div>
   );
