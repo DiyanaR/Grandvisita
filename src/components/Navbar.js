@@ -28,13 +28,13 @@ function Navbar() {
             <Link to="/rooms">Rooms</Link>
           </li>
           <li>
-            <Link to="/resturant">Resturant</Link>
-          </li>
-          <li>
             <Link to="/spatreatments">SPA</Link>
           </li>
           <li>
             <Link to="/contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link to="/questionnaire">question</Link>
           </li>
         </ul>
       </div>

@@ -313,7 +313,7 @@ h6 {
 .pricetop-list {
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0; */
   background: rgba(0, 0, 0, 0.6);
   color: var(--mainWhite);
   padding: 0.5rem 0.7rem 0.8rem;
@@ -532,7 +532,7 @@ h6 {
   transition: var(--mainTransition);
 }
 
-/* src/ContactForm.css */
+/*/Contact.css */
 .contact-container {
   display: flex;
   justify-content: center;

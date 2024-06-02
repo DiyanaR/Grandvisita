@@ -7,12 +7,11 @@ import SingleRoom from "./pages/SingleRoom";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Spatreatments from "./pages/Spatreatments";
-
 import LiveChat from "./components/LiveChat";
-
 import { RoomProvider } from "./RoomProvider";
+import QuestionnairePage from "./pages/QuestionnairePage";
 
 function App() {
   return (
@@ -25,11 +24,12 @@ function App() {
           <Route path="/rooms/:slug" element={<SingleRoom />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Spatreatments" element={<Spatreatments />} />
+          <Route path="/questionnaire" element={<QuestionnairePage />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </RoomProvider>
       <LiveChat />
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

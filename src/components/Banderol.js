@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Banderol({ children, title, subtitle }) {
   return (
@@ -6,7 +7,10 @@ function Banderol({ children, title, subtitle }) {
       <h1>{title}</h1>
       <div></div>
       <p>{subtitle}</p>
-      {children}
+      <Link to="/questionnaire" className="btn-primary">
+        No plans yet? Get recommendations!
+      </Link>
+      {/* <div>{children}</div> */}
     </div>
   );
 }

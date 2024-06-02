@@ -29,7 +29,7 @@ function BookingForm({ price, room }) {
       title: "Your booking is successful!",
       showConfirmButton: false,
       timer: 6000,
-      html: `Your booking number is ${bookingNum}. Book your <a href="/spatreatments?bookingNumber=${bookingNum}">free treatment</a> here.`,
+      html: `Your booking number is ${bookingNum}. Book your <a href="/spatreatments?bookingNumber=${bookingNum}">free SPA-treatment</a> here.`,
     });
 
     setShowModal(true);
