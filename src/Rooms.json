@@ -473,10 +473,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Poprad",
-      "country": "Slovakia"
+      "city": "Phuket",
+      "country": "Thailand"
     },
-    "images": ["images/slovakia/room31.png"]
+    "images": ["images/thailand/room31.png"]
   },
   {
     "id": "28",
@@ -490,10 +490,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Poprad",
-      "country": "Slovakia"
+      "city": "Phuket",
+      "country": "Thailand"
     },
-    "images": ["images/slovakia/room29.png"]
+    "images": ["images/thailand/room29.png"]
   },
   {
     "id": "29",
@@ -507,9 +507,9 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Poprad",
-      "country": "Slovakia"
+      "city": "Phuket",
+      "country": "Thailand"
     },
-    "images": ["images/slovakia/room30.png"]
+    "images": ["images/thailand/room30.png"]
   }
 ]

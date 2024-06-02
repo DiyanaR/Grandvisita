@@ -7,7 +7,7 @@ import SingleRoom from "./pages/SingleRoom";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Spatreatments from "./pages/Spatreatments";
 import LiveChat from "./components/LiveChat";
 import { RoomProvider } from "./RoomProvider";
@@ -29,7 +29,7 @@ function App() {
         </Routes>
       </RoomProvider>
       <LiveChat />
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

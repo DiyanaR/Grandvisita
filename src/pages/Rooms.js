@@ -77,7 +77,7 @@ function FilterForm() {
               { label: "Croatia - Zagreb", value: "Croatia, Zagreb" },
               { label: "Malta - Valletta", value: "Malta, Valletta" },
               { label: "Portugal - Lisbon", value: "Portugal, Lisbon" },
-              { label: "Slovakia - Poprad", value: "Slovakia, Poprad" },
+              { label: "Thailand - Phuket", value: "Thailand, Phuket" },
               { label: "Spain - Marbella", value: "Spain, Marbella" },
               { label: "Germany - Munich", value: "Germany, Munich" },
             ]}
