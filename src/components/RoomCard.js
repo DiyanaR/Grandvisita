@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function RoomCard({ room }) {
-  if (!room) return null;
+  if (!room || !room.images || room.images.legth === 0) return null;
 
   const { name, id, images, price } = room;
 

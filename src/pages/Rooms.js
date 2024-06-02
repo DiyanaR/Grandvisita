@@ -6,6 +6,7 @@ import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import { Link } from "react-router-dom";
 import roomsData from "../Rooms.json";
+import Footer from "../components/Footer";
 
 function FilterForm() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -69,17 +70,16 @@ function FilterForm() {
           <Select
             className="dropdown"
             options={[
-              { label: "Popular destinations", value: "" },
-              { label: "Cyprus - Ayia Napa", value: "Cyprus, Ayia Napa" },
+              { label: "Popular destinations" },
               { label: "France - Paris", value: "France, Paris" },
               { label: "Greece - Athen", value: "Greece, Athen" },
               { label: "Italy - Rome", value: "Italy, Rome" },
-              { label: "Croatia - Zagreb", value: "Croatia, Zagreb" },
-              { label: "Malta - Valletta", value: "Malta, Valletta" },
-              { label: "Portugal - Lisbon", value: "Portugal, Lisbon" },
+              { label: "Switzerland - Lucerne", value: "Switzerland, Lucerne" },
+              { label: "Maldives - Male", value: "Maldives, Male" },
+              { label: "Nepal - Pokhara", value: "Nepal, Pokhara" },
               { label: "Thailand - Phuket", value: "Thailand, Phuket" },
               { label: "Spain - Marbella", value: "Spain, Marbella" },
-              { label: "Germany - Munich", value: "Germany, Munich" },
+              { label: "Canada - Whistler", value: "Canada, Whistler" },
             ]}
             value={
               selectedLocation
@@ -106,6 +106,7 @@ function FilterForm() {
 
         <section className="roomslist">
           <div className="roomslist-center">
+            {console.log("Filtered Rooms:", filteredRooms)}
             {filteredRooms.length > 0 || searchTerm ? (
               filteredRooms.map((room) => (
                 <article key={room.id} className="room">
@@ -125,6 +126,7 @@ function FilterForm() {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 }

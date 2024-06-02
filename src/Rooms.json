@@ -18,22 +18,7 @@
       "city": "Marbella",
       "country": "Spain"
     },
-
-    "images": ["images/spain/marbellarum.png"],
-    "nearbyRestaurants": [
-      {
-        "name": "Messina",
-        "city": "Marbella",
-        "country": "Spain",
-        "image": "images/spain/messina.png"
-      },
-      {
-        "name": "Skina",
-        "city": "Marbella",
-        "country": "Spain",
-        "image": "images/spain/skina.png"
-      }
-    ]
+    "images": ["images/spain/marbellarum.png"]
   },
   {
     "id": "2",
@@ -82,8 +67,8 @@
     "breakfast": false,
     "description": "Spacious Double Haven: Experience spaciousness and serenity in our double deluxe rooms, ideal for couples or friends traveling together. Enjoy ample room to unwind and relax, with modern conveniences at your fingertips.",
     "location": {
-      "city": "Aiya napa",
-      "country": "Cyprus"
+      "city": "Marbella",
+      "country": "Spain"
     },
     "images": ["images/cyprus/cyprusroom.png"]
   },
@@ -99,8 +84,8 @@
     "breakfast": false,
     "description": "Elegant Family Suite: Discover the luxury of our Family Deluxe suite, where elegance meets functionality. With separate sleeping and living areas, this suite offers a relaxing and practical space for the family to unwind and enjoy.",
     "location": {
-      "city": "Aiya napa",
-      "country": "Cyprus"
+      "city": "Paris",
+      "country": "France"
     },
     "images": ["images/cyprus/room10.png"]
   },
@@ -116,8 +101,8 @@
     "breakfast": false,
     "description": "Modern Family Unit: Our Family Deluxe unit combines modern amenities with family-friendly design. Featuring comfortable beds and carefully designed spaces, this room is perfect for a memorable family vacation.",
     "location": {
-      "city": "Aiya napa",
-      "country": "Cyprus"
+      "city": "Paris",
+      "country": "France"
     },
     "images": ["images/cyprus/room9.png"]
   },
@@ -269,10 +254,10 @@
     "breakfast": false,
     "description": "Comfortable Solo Sanctuary: Find comfort and solace in our single rooms, thoughtfully designed for solo travelers. Unwind in a cozy atmosphere and enjoy a restful night's sleep in a comfortable bed. ",
     "location": {
-      "city": "Munich",
-      "country": "Germany"
+      "city": "Whistler",
+      "country": "Canada"
     },
-    "images": ["images/germany/room.16.png"]
+    "images": ["images/canada/room.16.png"]
   },
   {
     "id": "16",
@@ -286,10 +271,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Munich",
-      "country": "Germany"
+      "city": "Whistler",
+      "country": "Canada"
     },
-    "images": ["images/germany/room11.png"]
+    "images": ["images/canada/room11.png"]
   },
   {
     "id": "17",
@@ -303,10 +288,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Munich",
-      "country": "Germany"
+      "city": "Whistler",
+      "country": "Canada"
     },
-    "images": ["images/germany/red-white.png"]
+    "images": ["images/canada/red-white.png"]
   },
   {
     "id": "18",
@@ -320,10 +305,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Lisbon",
-      "country": "Portugal"
+      "city": "Pokhara",
+      "country": "Nepal"
     },
-    "images": ["images/portugal/room22.png"]
+    "images": ["images/nepal/room22.png"]
   },
   {
     "id": "19",
@@ -337,10 +322,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Lisbon",
-      "country": "Portugal"
+      "city": "Pokhara",
+      "country": "Nepal"
     },
-    "images": ["images/portugal/room20.png"]
+    "images": ["images/nepal/room20.png"]
   },
   {
     "id": "20",
@@ -354,10 +339,10 @@
     "breakfast": false,
     "description": "Modern Solo Oasis: Retreat to a modern oasis designed for solo travelers in our single rooms. Featuring contemporary amenities and stylish décor, these rooms offer the perfect blend of comfort and functionality.",
     "location": {
-      "city": "Lisbon",
-      "country": "Portugal"
+      "city": "Pokhara",
+      "country": "Nepal"
     },
-    "images": ["images/portugal/room21.png"]
+    "images": ["images/nepal/room21.png"]
   },
   {
     "id": "21",
@@ -371,10 +356,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Zagreb",
-      "country": "Croatia"
+      "city": "Lucerne",
+      "country": "Switzerland"
     },
-    "images": ["images/croatia/room25.png"]
+    "images": ["images/switzerland/room25.png"]
   },
   {
     "id": "22",
@@ -388,10 +373,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Zagreb",
-      "country": "Croatia"
+      "city": "Lucerne",
+      "country": "Switzerland"
     },
-    "images": ["images/croatia/room23.png"]
+    "images": ["images/switzerland/room23.png"]
   },
   {
     "id": "23",
@@ -405,10 +390,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Zagreb",
-      "country": "Croatia"
+      "city": "Lucerne",
+      "country": "Switzerland"
     },
-    "images": ["images/croatia/room.24.png"]
+    "images": ["images/switzerland/room.24.png"]
   },
   {
     "id": "24",
@@ -422,10 +407,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Valletta",
-      "country": "Malta"
+      "city": "Male",
+      "country": "Maldives"
     },
-    "images": ["images/malta/room28.png"]
+    "images": ["images/maldives/room28.png"]
   },
   {
     "id": "25",
@@ -439,10 +424,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Valletta",
-      "country": "Malta"
+      "city": "Male",
+      "country": "Maldives"
     },
-    "images": ["images/malta/room26.png"]
+    "images": ["images/maldives/room26.png"]
   },
   {
     "id": "26",
@@ -456,10 +441,10 @@
     "breakfast": false,
     "description": "Spacious family room with extra facilities for a luxurious experience.",
     "location": {
-      "city": "Valletta",
-      "country": "Malta"
+      "city": "Male",
+      "country": "Maldives"
     },
-    "images": ["images/malta/room27.png"]
+    "images": ["images/maldives/room27.png"]
   },
   {
     "id": "27",

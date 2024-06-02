@@ -16,6 +16,18 @@ const getRecommendations = (formData) => {
           country: "Thailand",
           hotel: "Phuket Beach Resort",
         });
+        recommendations.push({
+          country: "Spain",
+          city: "Marbella",
+          hotel: "City Center Hotel",
+        });
+      } else if (budget === "medium") {
+        // medium budget rekommendationer
+        recommendations.push({
+          country: "Spain",
+          city: "Marbella",
+          hotel: "Coastal Resort",
+        });
       } else if (budget === "high") {
         recommendations.push({
           country: "Maldives",
@@ -23,7 +35,7 @@ const getRecommendations = (formData) => {
         });
       }
     } else {
-      // If climate preference is not specified, provide general beach recommendations
+      //generel
       recommendations.push(
         {
           country: "Thailand",
@@ -55,7 +67,7 @@ const getRecommendations = (formData) => {
         });
       }
     } else {
-      // If climate preference is not specified, provide general mountains recommendations
+      // generel
       recommendations.push(
         {
           country: "Nepal",
@@ -69,18 +81,16 @@ const getRecommendations = (formData) => {
           country: "Canada",
           hotel: "Rocky Mountain Retreat",
         }
-        // Add more general mountains recommendations here
       );
     }
   }
 
-  // City recommendations
   if (interests === "city") {
     if (climatePreference === "warm") {
       if (budget === "low") {
         recommendations.push({
           country: "Spain",
-          city: "Barcelona",
+          city: "Marbella",
           hotel: "City Center Hotel",
         });
       } else if (budget === "high") {
@@ -91,7 +101,7 @@ const getRecommendations = (formData) => {
         });
       }
     } else {
-      // If climate preference is not specified, provide general city recommendations
+      // generel
       recommendations.push(
         {
           country: "Spain",
@@ -108,12 +118,25 @@ const getRecommendations = (formData) => {
           city: "Paris",
           hotel: "City Boutique Hotel",
         }
-        // Add more general city recommendations here
       );
     }
   }
 
-  // Add more recommendations for other interests and preferences
+  if (climatePreference === "warm") {
+    recommendations.push({
+      country: "Greece",
+      city: "Athens",
+      hotel: "Athenian Riviera Hotel",
+    });
+  }
+
+  if (climatePreference === "warm") {
+    recommendations.push({
+      country: "Spain",
+      city: "Marbella",
+      hotel: "Beachfront Resort",
+    });
+  }
 
   return recommendations;
 };
