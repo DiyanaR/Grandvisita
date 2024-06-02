@@ -10,7 +10,6 @@ function Banderol({ children, title, subtitle }) {
       <Link to="/questionnaire" className="btn-primary">
         No plans yet? Get recommendations!
       </Link>
-      {/* <div>{children}</div> */}
     </div>
   );
 }

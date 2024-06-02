@@ -1,18 +1,19 @@
 import React from "react";
 import Title from "./Title";
-import { FaShuttleVan, FaCoffee, FaUtensils, FaSpa } from "react-icons/fa";
+import { FaShuttleVan, FaMap, FaRegGem, FaSpa } from "react-icons/fa";
 
 function Benefit() {
   const offers = [
     {
-      icon: <FaUtensils />,
-      Title: "Breakfast",
-      info: "start your day with a delicious breakfast featuring a variety of fresh options",
+      icon: <FaRegGem />,
+      Title: "Luxury",
+      info: "Commence your day in the lap of luxury with an exclusive morning offering.",
     },
+
     {
-      icon: <FaCoffee />,
-      Title: "Coffe",
-      info: "Enjoy our coffe every morning, brewed from the finest beans.",
+      icon: <FaMap />,
+      Title: "Travel Planner",
+      info: "Plan your trips with ease and discover new destinations.",
     },
     {
       icon: <FaShuttleVan />,
