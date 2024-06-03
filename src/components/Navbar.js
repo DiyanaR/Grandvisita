@@ -25,7 +25,7 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/questionnaire">Travel planner</Link>
+            <Link to="/questionnaire">Travel-planner</Link>
           </li>
           <li>
             <Link to="/rooms">Rooms</Link>
@@ -34,7 +34,7 @@ function Navbar() {
             <Link to="/spatreatments">SPA</Link>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
