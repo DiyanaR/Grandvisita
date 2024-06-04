@@ -46,8 +46,14 @@ function FilterForm() {
   }, [searchTerm, maxPrice, filterRooms]);
 
   const handleSearchChange = (selectedOption) => {
-    setSearchTerm(selectedOption ? selectedOption.value : "");
-    setSelectedLocation(selectedOption ? selectedOption.label : "");
+    if (selectedOption && selectedOption.label === "Popular destinations") {
+      setSearchTerm("");
+      setSelectedLocation("");
+      setFilteredRooms(rooms);
+    } else {
+      setSearchTerm(selectedOption ? selectedOption.value : "");
+      setSelectedLocation(selectedOption ? selectedOption.label : "");
+    }
   };
 
   const handlePriceChange = (value) => {
@@ -84,7 +90,7 @@ function FilterForm() {
             value={
               selectedLocation
                 ? { label: selectedLocation, value: searchTerm }
-                : null
+                : { label: "Popular destinations", value: "" }
             }
             onChange={handleSearchChange}
             placeholder="Popular destinations"

@@ -63,6 +63,7 @@ const Recommendations = ({ recommendations }) => {
                 <CountryTitle>{rec.country}</CountryTitle>
                 {rec.city && <p>City: {rec.city}</p>}
                 <p>Recommended Hotel: {rec.hotel}</p>
+
                 {/* </StyledLink> */}
               </StyledLink>
             </RecommendationCard>
