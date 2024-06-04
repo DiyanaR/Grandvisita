@@ -1,13 +1,6 @@
 const getRecommendations = (formData) => {
-  console.log("Form data in getRecommendations:", formData);
-  const { budget, interests, travelDuration, climatePreference } = formData;
-
+  const { budget, interests, climatePreference } = formData;
   const recommendations = [];
-
-  console.log("Interests:", interests);
-  console.log("Climate Preference:", climatePreference);
-  console.log("Budget:", budget);
-  console.log("Travel Duration:", travelDuration);
 
   if (interests === "beach") {
     if (climatePreference === "hot") {
@@ -22,7 +15,6 @@ const getRecommendations = (formData) => {
           hotel: "City Center Hotel",
         });
       } else if (budget === "medium") {
-        // medium budget rekommendationer
         recommendations.push({
           country: "Spain",
           city: "Marbella",

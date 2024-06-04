@@ -10,6 +10,9 @@ function Footer() {
           <h1>Quick links</h1>
         </div>
         <div className="content-section">
+          <Link to="/questionnaire" className="footer-link">
+            Travel-planner
+          </Link>
           <Link to="/" className="footer-link">
             Home
           </Link>
@@ -56,9 +59,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="copyright">
-        <p>© 2024 Grandvisita. All rights reserved.</p>
-      </div>
+      <div className="copyright"></div>
     </div>
   );
 }

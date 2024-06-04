@@ -435,16 +435,13 @@ const Questionnaire = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const newErrors = {
       budget: formData.budget === "",
       interests: formData.interests === "",
       travelDuration: formData.travelDuration === "",
       climatePreference: formData.climatePreference === "",
     };
-
     setErrors(newErrors);
-
     const hasErrors = Object.values(newErrors).some((error) => error);
 
     if (!hasErrors) {

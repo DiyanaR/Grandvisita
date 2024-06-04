@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { RoomContext } from "../RoomProvider";
-import { FaWifi, FaUtensils, FaTv } from "react-icons/fa";
+// import { FaWifi, FaUtensils, FaTv } from "react-icons/fa";
 import BookingForm from "../components/BookingForm";
 import Review from "../components/Review";
 
@@ -45,17 +45,6 @@ function SingleRoom() {
           <article className="desc">
             <h3>Details</h3>
             <p>{description}</p>
-            <div className="benefit">
-              <span className="icon">
-                <FaWifi title="WiFi included" />
-              </span>
-              <span className="icon">
-                <FaUtensils title="Meals included" />
-              </span>
-              <span className="icon">
-                <FaTv title="TV included" />
-              </span>
-            </div>
           </article>
 
           <article className="info">
@@ -68,7 +57,6 @@ function SingleRoom() {
             </h6>
             <h6>{pets ? "Pets allowed" : "No pets allowed"}</h6>
             <h6>{breakfast && "Free breakfast included"}</h6>
-
             <Review />
           </article>
         </div>
