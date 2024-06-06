@@ -404,7 +404,7 @@ import {
   Typography,
   FormHelperText,
 } from "@mui/material";
-import VideoBackground from "./VideoBackground";
+// import VideoBackground from "./VideoBackground";
 
 const Questionnaire = ({ onSubmit }) => {
   const [formData, setFormData] = useState({
@@ -451,7 +451,7 @@ const Questionnaire = ({ onSubmit }) => {
 
   return (
     <>
-      <VideoBackground />
+      {/* <VideoBackground /> */}
       <Container
         maxWidth="sm"
         sx={{

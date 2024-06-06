@@ -24,7 +24,7 @@ const VideoBackground = () => {
           transform: "translate(-50%, -50%)",
         }}
       >
-        <source src="/images/video5.mp4" type="video/mp4" />
+        {/* <source src="/images/video5.mp4" type="video/mp4" /> */}
         Your browser does not support the video tag.
       </video>
     </div>
